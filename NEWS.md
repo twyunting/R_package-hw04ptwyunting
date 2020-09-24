@@ -1,6 +1,6 @@
 # hw04ptwyunting 0.0.0.9001
 
-* added a new version number
+* Added a new version number
 
 # hw04ptwyunting 0.0.0.9000
 

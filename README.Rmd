@@ -22,7 +22,7 @@ The goal of hw04ptwyunting is to evaluate our functions...
 
 ## Installation
 
-You can install the released version of hw04ptwyunting by asking me
+You can install the released version of hw04ptwyunting by asking me.
 
 ``` r
 install.packages("hw04ptwyunting")

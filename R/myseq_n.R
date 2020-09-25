@@ -1,3 +1,12 @@
+#' element n is the sum of element n−1 and the absolute value of the difference between elements n−2 and n−3 divided by two.
+#'
+#' @param x factor
+#' @param n integer
+#'
+#' @return
+#' @export myseq_n
+#'
+#' @examples
 myseq_n <- function(x, n){
   if (length(x) == 3){
     if(n > 0){

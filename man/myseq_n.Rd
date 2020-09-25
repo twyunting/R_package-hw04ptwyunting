@@ -2,7 +2,8 @@
 % Please edit documentation in R/myseq_n.R
 \name{myseq_n}
 \alias{myseq_n}
-\title{element n is the sum of element n−1 and the absolute value of the difference between elements n−2 and n−3 divided by two.}
+\title{test
+element n is the sum of element n−1 and the absolute value of the difference between elements n−2 and n−3 divided by two.}
 \usage{
 myseq_n(x, n)
 }
@@ -15,5 +16,6 @@ myseq_n(x, n)
 
 }
 \description{
+test
 element n is the sum of element n−1 and the absolute value of the difference between elements n−2 and n−3 divided by two.
 }

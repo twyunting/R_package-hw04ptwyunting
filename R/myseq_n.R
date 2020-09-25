@@ -7,6 +7,13 @@
 #' @export myseq_n
 #'
 #' @examples
+#' Test function
+#'myseq_n(x = c(2, 3, 3), n = 3)
+#'myseq_n(x = c(2, 4, 3), n = 4)
+#'myseq_n(x = c(2, 4, 3), n = 5)
+#'myseq_n(x = c(2, 4, 3), n = 6)
+#'myseq_n(x = c(2, 4, 3), n = 7)
+#'
 myseq_n <- function(x, n){
   if (length(x) == 3){
     if(n > 0){

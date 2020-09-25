@@ -1,6 +1,6 @@
 Package: hw04ptwyunting
 Title: My package for homwwork week4
-Version: 0.0.0.9000
+Version: 0.0.0.9002
 Authors@R: 
     person(given = "Yunting",
            family = "Chiu",

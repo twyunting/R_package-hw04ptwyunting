@@ -1,3 +1,7 @@
+# hw04ptwyunting 0.0.0.9002
+
+* Added a new function myseq_n
+
 # hw04ptwyunting 0.0.0.9001
 
 * Added a new version number

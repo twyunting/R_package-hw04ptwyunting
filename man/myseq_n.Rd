@@ -23,5 +23,4 @@ myseq_n(x = c(2, 4, 3), n = 4)
 myseq_n(x = c(2, 4, 3), n = 5)
 myseq_n(x = c(2, 4, 3), n = 6)
 myseq_n(x = c(2, 4, 3), n = 7)
-
 }

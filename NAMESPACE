@@ -2,5 +2,6 @@
 
 export("%>%")
 export(myseq_n)
+export(numSeqPlot)
 importFrom(magrittr,"%>%")
 importFrom(tibble,tibble)

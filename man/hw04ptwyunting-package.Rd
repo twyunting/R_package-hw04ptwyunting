@@ -4,7 +4,7 @@
 \name{hw04ptwyunting-package}
 \alias{hw04ptwyunting}
 \alias{hw04ptwyunting-package}
-\title{hw04ptwyunting: My package for homwwork week4 by stat-613}
+\title{hw04ptwyunting: My package for homework week 4 by stat-613}
 \description{
 A recursive formula of three sequences with proper graphic
 }

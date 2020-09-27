@@ -1,6 +1,6 @@
 # hw04ptwyunting 0.0.0.9003
 
-* Added a new function numSeqPlot and import ggplot2, pipe, and tibble
+* Added a new function numSeqPlot and import ggplot2, pipe, and tibble packages
 
 # hw04ptwyunting 0.0.0.9002
 

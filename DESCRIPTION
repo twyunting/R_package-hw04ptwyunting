@@ -20,3 +20,7 @@ Suggests:
     rmarkdown
 Language: en-US
 VignetteBuilder: knitr
+Imports: 
+    ggplot2,
+    magrittr,
+    tibble

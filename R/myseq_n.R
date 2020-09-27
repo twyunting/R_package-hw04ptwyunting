@@ -1,13 +1,12 @@
-#' element n is the sum of element n−1 and the absolute value of the difference between elements n−2 and n−3 divided by two.
+#' A recursive formula of three sequences
+#' @description That is, element n is the sum of element n−1 and the value of the difference between elements n−3 and n−2 divided by n.
+#' @param x input a vector x containing the first three numeric elements of this sequence
+#' @param n a positive (>0) integer n denoting the final nth element of the sequence to calculate
 #'
-#' @param x factor
-#' @param n integer
-#'
-#' @return
+#' @return The function should return element n
 #' @export myseq_n
 #'
 #' @examples
-#' Test function
 #'myseq_n(x = c(2, 3, 3), n = 3)
 #'myseq_n(x = c(2, 4, 3), n = 4)
 #'myseq_n(x = c(2, 4, 3), n = 5)
@@ -15,27 +14,18 @@
 #'myseq_n(x = c(2, 4, 3), n = 7)
 #'
 myseq_n <- function(x, n){
-  if (length(x) == 3){
-    if(n > 0){
-      nums <- vector(mode = "integer", length = n)
-      for(i in seq_along(nums)){
-        if(i <= 3){
-          nums[i] <- x[i]
-        }else{
-          nums[i] <- nums[i-1] + (nums[i-3] - nums[i-2])/i
-        }
+  stopifnot(length(x) == 3) # error check x
+  stopifnot(n > 0) # error check n
 
-      }
-      return(nums[n])
+  nums <- vector(mode = "integer", length = n) # create nums's type
+  for(i in seq_along(nums)){
+    if(i <= 3){
+      nums[i] <- x[i]
     }else{
-      stop("n must > 0 and n must be an integer")
-
-    } # error check n
-  }else{
-    stop("the length of x should be 3")
-
-  } # error check x at least 3
+      nums[i] <- nums[i-1] + (nums[i-3] - nums[i-2])/i
+    }
+  }
+  return(nums[n])
 } # created myseq_n function
-
 
 

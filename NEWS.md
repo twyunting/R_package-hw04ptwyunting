@@ -1,3 +1,8 @@
+# hw04ptwyunting 0.0.0.9003
+
+* Added a new function numSeqPlot and import ggplot2, pipe, and tibble
+
+
 # hw04ptwyunting 0.0.0.9002
 
 * Added a new function myseq_n

@@ -2,20 +2,26 @@
 % Please edit documentation in R/myseq_n.R
 \name{myseq_n}
 \alias{myseq_n}
-\title{test
-element n is the sum of element n−1 and the absolute value of the difference between elements n−2 and n−3 divided by two.}
+\title{A recursive formula of three sequences}
 \usage{
 myseq_n(x, n)
 }
 \arguments{
-\item{x}{factor}
+\item{x}{input a vector x containing the first three numeric elements of this sequence}
 
-\item{n}{integer}
+\item{n}{a positive (>0) integer n denoting the final nth element of the sequence to calculate}
 }
 \value{
-
+The function should return element n
 }
 \description{
-test
-element n is the sum of element n−1 and the absolute value of the difference between elements n−2 and n−3 divided by two.
+That is, element n is the sum of element n−1 and the value of the difference between elements n−3 and n−2 divided by n.
+}
+\examples{
+myseq_n(x = c(2, 3, 3), n = 3)
+myseq_n(x = c(2, 4, 3), n = 4)
+myseq_n(x = c(2, 4, 3), n = 5)
+myseq_n(x = c(2, 4, 3), n = 6)
+myseq_n(x = c(2, 4, 3), n = 7)
+
 }

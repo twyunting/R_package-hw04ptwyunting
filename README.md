@@ -7,11 +7,12 @@
 
 <!-- badges: end -->
 
-The goal of hw04ptwyunting is to evaluate our functions…
+The goal of hw04ptwyunting is to …
 
 ## Installation
 
-You can install the released version of hw04ptwyunting by asking me
+You can install the released version of hw04ptwyunting by asking me.
+(GitHub: @twyunting)
 
 ``` r
 install.packages("hw04ptwyunting")

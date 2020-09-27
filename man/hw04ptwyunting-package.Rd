@@ -6,7 +6,7 @@
 \alias{hw04ptwyunting-package}
 \title{hw04ptwyunting: My package for homework week 4 by stat-613}
 \description{
-A recursive formula of three sequences with proper graphic
+A formula of three sequences with a proper graphic
 }
 \author{
 \strong{Maintainer}: Yunting Chiu \email{yc6705a@american.edu} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})

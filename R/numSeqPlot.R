@@ -5,7 +5,6 @@
 #'
 #' @return This function should return a line plot of the output values for the different values of n.
 #' @export numSeqPlot
-#' @examples
 #' # testing the function as data frame
 #' my_data <- tribble(
 #' ~x, ~y, ~z, ~n,

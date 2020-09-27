@@ -16,18 +16,3 @@ This function should return a line plot of the output values for the different v
 The first three columns are the values of the three numerics to be input to function myseq_n() and the fourth column is the positive integer n for the sequence to be generated.
 This function should return a line plot of the output values for the different values of n.
 }
-\examples{
-# testing the function as data frame
-my_data <- tribble(
-~x, ~y, ~z, ~n,
-2,4,3,3,
-2,4,3,4,
-2,4,3,5,
-2,4,3,6,
-2,4,3,7,
-2,4,3,8,
-2,4,3,9,
-2,4,3,10,
-2,4,3,12)
-numSeqPlot(my_data)
-}

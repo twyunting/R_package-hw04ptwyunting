@@ -11,8 +11,8 @@ The goal of hw04ptwyunting is to …
 
 ## Installation
 
-You can install the released version of hw04ptwyunting by asking me.
-(GitHub: @twyunting)
+You can install the released version of hw04ptwyunting by asking me.  
+My GitHub ID is: @twyunting or mailing me: <yc6705a@american.edu>
 
 ``` r
 install.packages("hw04ptwyunting")
@@ -20,33 +20,25 @@ install.packages("hw04ptwyunting")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+Consider the recursive sequence defined by \[
+x_n = x_{n-1} + \frac{x_{n-3} - x_{n-2}}{n}
+\] That is, element n is the sum of element n−1 and the value of the
+difference between elements n−3 and n−2 divided by two.  
+For example, if we let x1=3, x2=1, and x3=10, then x4 is \[
+x_4 = 10 + \frac{3 - 1}{4} = 10.5
+\] This is a basic example which shows you how to calculate this
+formula:
 
 ``` r
 library(hw04ptwyunting)
-## basic example code
+myseq_n(x = c(2, 3, 3), n = 3)
+#> [1] 3
+myseq_n(x = c(2, 4, 3), n = 4)
+#> [1] 2.5
+myseq_n(x = c(2, 4, 3), n = 5)
+#> [1] 2.7
+myseq_n(x = c(2, 4, 3), n = 6)
+#> [1] 2.783333
+myseq_n(x = c(2, 4, 3), n = 7)
+#> [1] 2.754762
 ```
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub\!

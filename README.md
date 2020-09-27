@@ -7,7 +7,8 @@
 
 <!-- badges: end -->
 
-The goal of hw04ptwyunting is to …
+The goal of hw04ptwyunting is to accomplish a formula of three sequences
+with a proper graphic.
 
 ## Author
 

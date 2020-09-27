@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "yc6705a@american.edu",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: A recursive formula of three sequences with proper graphic
+Description: A formula of three sequences with a proper graphic
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

@@ -2,12 +2,12 @@
 % Please edit documentation in R/numSeqPlot.R
 \name{numSeqPlot}
 \alias{numSeqPlot}
-\title{Plot a graph from myseq_n}
+\title{Plot a graphic from myseq_n}
 \usage{
 numSeqPlot(nums)
 }
 \arguments{
-\item{nums}{the input from the same package called function myseq_n}
+\item{nums}{The input from the same package called function myseq_n}
 }
 \value{
 This function should return a line plot of the output values for the different values of n.

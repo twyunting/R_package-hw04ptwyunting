@@ -12,7 +12,8 @@ The goal of hw04ptwyunting is to …
 ## Author
 
 My name is Yunting Chiu, and I am a Data Science student at American
-University. For more details please visit my
+University.  
+For more details please visit my
 [LinkedIn](https://www.linkedin.com/in/yuntingchiu/).
 
 ## Installation

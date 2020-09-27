@@ -1,7 +1,7 @@
-#' Plot a graph from myseq_n
+#' Plot a graphic from myseq_n
 #' @description The first three columns are the values of the three numerics to be input to function myseq_n() and the fourth column is the positive integer n for the sequence to be generated.
 #' This function should return a line plot of the output values for the different values of n.
-#' @param nums the input from the same package called function myseq_n
+#' @param nums The input from the same package called function myseq_n
 #'
 #' @return This function should return a line plot of the output values for the different values of n.
 #' @export numSeqPlot

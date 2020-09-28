@@ -2,18 +2,18 @@
 % Please edit documentation in R/numSeqPlot.R
 \name{numSeqPlot}
 \alias{numSeqPlot}
-\title{Plot a graphic from myseq_n}
+\title{A line graph that plots the relation between first three columns and fourth column.}
 \usage{
 numSeqPlot(nums)
 }
 \arguments{
-\item{nums}{The input from the same package called function myseq_n}
+\item{nums}{A data frame with four columns, and each column must contain numbers only, the fourth column must be the positive integer.}
 }
 \value{
 This function should return a line plot of the output values for the different values of n.
 }
 \description{
-The first three columns are the values of the three numeric to be input from function myseq_n() and the fourth column is the positive integer n for the sequence to be generated.
+The prerequisite is this data frame must have four columns. The first three columns are the values of the three numeric to be input, and the fourth column is the positive integer n for the sequence to be generated.
 This function should return a line plot of the output values for the different values of n.
 }
 \examples{

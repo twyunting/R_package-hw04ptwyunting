@@ -2,7 +2,7 @@
 % Please edit documentation in R/myseq_n.R
 \name{myseq_n}
 \alias{myseq_n}
-\title{A recursive formula of three sequences}
+\title{A formula of three sequences}
 \usage{
 myseq_n(x, n)
 }

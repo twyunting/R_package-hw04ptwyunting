@@ -4,9 +4,9 @@
 \name{hw04ptwyunting-package}
 \alias{hw04ptwyunting}
 \alias{hw04ptwyunting-package}
-\title{hw04ptwyunting: My package for homework week 4 by stat-613}
+\title{hw04ptwyunting: My first personal R package}
 \description{
-A formula of three sequences with a proper graphic
+This package aims to make a math formula in sequence with a proper graph.
 }
 \author{
 \strong{Maintainer}: Yunting Chiu \email{yc6705a@american.edu} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})

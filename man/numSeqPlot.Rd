@@ -10,7 +10,7 @@ numSeqPlot(nums)
 \item{nums}{A data frame with four columns, and each column must contain numbers only, the fourth column must be the positive integer.}
 }
 \value{
-This function should return a line plot of the output values for the different values of n.
+Return a line plot of the output values for the different values of n.
 }
 \description{
 The prerequisite is this data frame must have four columns. The first three columns are the values of the three numeric to be input, and the fourth column is the positive integer n for the sequence to be generated.

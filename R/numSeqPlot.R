@@ -3,8 +3,8 @@
 #' This function should return a line plot of the output values for the different values of n.
 #' @param nums A data frame with four columns, and each column must contain numbers only, the fourth column must be the positive integer.
 #' @importFrom ggplot2 aes geom_line labs
-#' @importFrom tibble tribble
-#' @return This function should return a line plot of the output values for the different values of n.
+#' @importFrom tibble tribble as_tibble
+#' @return Return a line plot of the output values for the different values of n.
 #' @export numSeqPlot
 #'
 #' @examples
@@ -22,7 +22,7 @@
 #' 2,4,3,12)
 #'numSeqPlot(my_data)
 numSeqPlot <- function(nums){
-  stopifnot(length(nums) == 4) # error check the length of function
+  stopifnot(length(nums) == 4 & as_tibble(nums)) # error check the length of nums and df type.
   stopifnot(nums[4] > 0) # error check the fourth column is a positive integer
 
   df <- tibble(n = 0, output = 0) # build a blank data frame
@@ -39,7 +39,8 @@ numSeqPlot <- function(nums){
   graphic <- df %>% # make a graphic
     ggplot2::ggplot(mapping = ggplot2::aes(x = n, y = output)) +
     ggplot2::geom_line() +
-    ggplot2::labs(title = paste("My Sequence:", df[ ,2])) # ggtitle
+    ggplot2::labs(title = paste("My Sequence:", df[ ,2]),
+                  x = "n", y = "output")
 
   return(graphic) # created numSeqPlot
 }

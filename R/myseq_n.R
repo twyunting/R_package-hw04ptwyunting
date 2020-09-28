@@ -1,4 +1,4 @@
-#' A recursive formula of three sequences
+#' A formula of three sequences
 #' @description That is, element n is the sum of element n−1 and the value of the difference between elements n−3 and n−2 divided by n.
 #' @param x input a vector x containing the first three numeric elements of this sequence
 #' @param n a positive (>0) integer n denoting the final nth element of the sequence to calculate

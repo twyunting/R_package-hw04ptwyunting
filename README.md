@@ -7,15 +7,15 @@
 
 <!-- badges: end -->
 
-The goal of hw04ptwyunting is to accomplish a formula of three sequences
-with a proper graphic.
+The goal of hw04ptwyunting is to accomplish a math formula in sequence
+with a proper graph.
 
 ## Author
 
 My name is Yunting Chiu, and I am a Data Science student at American
 University.  
-For more details please visit my
-[LinkedIn](https://www.linkedin.com/in/yuntingchiu/).
+For more details please visit my [GitHub](https://github.com/twyunting)
+and [LinkedIn](https://www.linkedin.com/in/yuntingchiu/).
 
 ## Installation
 
@@ -29,13 +29,15 @@ install.packages("hw04ptwyunting")
 
 ## Functions
 
-`hw04ptwyunting` includes two functions.  
+**hw04ptwyunting** includes two functions.  
 1\. `myseq_n()`  
-2\. `numSeqPlot`  
+2\. `numSeqPlot()`  
 
 ## Examples
 
 #### myseq\_n()
+
+  - The recursive sequence defined by: ![](pics/function1.png)
 
   - `myseq_n()` needs two inputs, the first is a vector **x** containing
     the first three numbers of this sequence. The second one is a
@@ -90,5 +92,7 @@ my_data <- tibble::tribble(
   2,4,3,10,
   2,4,3,12)
 
-#numSeqPlot(my_data)
+# numSeqPlot(my_data)
 ```
+
+![](pics/numSeqPlotExample.png)

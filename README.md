@@ -27,18 +27,25 @@ me: <yc6705a@american.edu>
 install.packages("hw04ptwyunting")
 ```
 
-## Example
+## Functions
 
-Consider the recursive sequence defined by \[
-x_n = x_{n-1} + \frac{x_{n-3} - x_{n-2}}{n}
-\]  
-\- That is, element n is the sum of element n−1 and the value of the
-difference between elements n−3 and n−2 divided by two.  
-\- For example, if we let x1=3, x2=1, and x3=10, then x4 is \[
-x_4 = 10 + \frac{3 - 1}{4} = 10.5
-\]  
-\- This is a basic example which shows you how to calculate this
-formula:
+`hw04ptwyunting` includes two functions.  
+1\. `myseq_n()`  
+2\. `numSeqPlot`  
+
+## Examples
+
+#### myseq\_n()
+
+  - `myseq_n()` needs two inputs, the first is a vector **x** containing
+    the first three numbers of this sequence. The second one is a
+    positive (\>0) integer **n** which represents the final `n`th
+    element in the sequence to calculate.  
+
+  - This is a basic example which shows you how to use `myseq_n()`
+    function:  
+
+<!-- end list -->
 
 ``` r
 library(hw04ptwyunting)
@@ -53,3 +60,10 @@ myseq_n(x = c(2, 4, 3), n = 6)
 myseq_n(x = c(2, 4, 3), n = 7)
 #> [1] 2.754762
 ```
+
+#### numSeqPlot
+
+This function is used to make a line graphic. The x-aris of graphic is -
+All the inputs are totally from `myseq_n`. The first three columns are
+the values of the three numeric to be input, and the fourth column is
+the positive integer **n** for the sequence to be generated.

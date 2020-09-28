@@ -1,12 +1,14 @@
 #' Plot a graphic from myseq_n
-#' @description The first three columns are the values of the three numerics to be input to function myseq_n() and the fourth column is the positive integer n for the sequence to be generated.
+#' @description The first three columns are the values of the three numeric to be input from function myseq_n() and the fourth column is the positive integer n for the sequence to be generated.
 #' This function should return a line plot of the output values for the different values of n.
 #' @param nums The input from the same package called function myseq_n
 #'
 #' @return This function should return a line plot of the output values for the different values of n.
 #' @export numSeqPlot
+#'
+#' @examples
 #' # testing the function as data frame
-#' my_data <- tribble(
+#' my_data <- tibble::tribble(
 #' ~x, ~y, ~z, ~n,
 #' 2,4,3,3,
 #' 2,4,3,4,
@@ -22,20 +24,21 @@ numSeqPlot <- function(nums){
   stopifnot(length(nums) == 4) # error check the length of function
   stopifnot(nums[4] > 0) # error check the fourth column is a positive integer
 
-  df <- data_frame(n = 0, output = 0) # build a blank data frame
+  df <- tibble(n = 0, output = 0) # build a blank data frame
   nums <- tibble(nums) # named nums as tibble
   for (i in 1:nrow(nums)) {
     x <- c(nums[[i, 1]], nums[[i, 2]], nums[[i, 3]]) # extract x, y, z
     n <- nums[[i, 4]] # extract n
     myseq_n(x, n) -> df[i, 2] # the second column
     n -> df[i, 1] #the first column
+
   }
 
+  df[ ,2] <- round(df[ ,2],digits = 3) # set the rounding numbers will store in ggtitle later
   graphic <- df %>% # make a graphic
-    ggplot(mapping = aes(x = n, y = output)) +
-    geom_line()
-  #labs(title = "My Sequence:"paste(df[ , 2])
+    ggplot2::ggplot(mapping = ggplot2::aes(x = n, y = output)) +
+    ggplot2::geom_line() +
+    ggplot2::labs(title = paste("My Sequence:", df[ ,2])) # ggtitle
 
-  return(graphic)
+  return(graphic) # created numSeqPlot
 }
-

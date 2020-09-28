@@ -14,7 +14,7 @@
 #'myseq_n(x = c(2, 4, 3), n = 7)
 myseq_n <- function(x, n){
   stopifnot(length(x) == 3 & is.numeric(x)) # error check x
-  stopifnot(n > 0) # error check n
+  stopifnot(n > 0 & as.integer(n)) # error check n
 
   nums <- vector(mode = "integer", length = n) # create nums's type
   for(i in seq_along(nums)){

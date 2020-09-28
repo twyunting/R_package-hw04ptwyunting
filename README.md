@@ -65,13 +65,30 @@ myseq_n(x = c(2, 4, 3), n = 7)
 
 This function `numSeqPlot()` shows a line graph that plots the relation
 between first three columns and fourth column.  
-\- The prerequisite is this data frame must have four columns.  
-\- The first three columns are the values of the three numeric to be
-input, and the fourth column is the positive integer **n** for the
-sequence to be generated.  
+\- The prerequisite is this data frame must have four columns. - The
+first three columns are the values of the three numeric to be input, and
+the fourth column is the positive integer **n** for the sequence to be
+generated.  
 \- `numSeqPlot()` should return a line plot of the output values for the
 different values of **n**. This graph shows the output of x-axis is
 called **n** with input of fourth column, the output of y-axis is called
 **output** with the first three terms in the sequence.  
 \- This is a basic example which shows you how to use `numSeqPlot()`
-function:
+function:  
+
+``` r
+# testing the function
+my_data <- tibble::tribble(
+  ~x, ~y, ~z, ~n,
+  2,4,3,3,
+  2,4,3,4,
+  2,4,3,5,
+  2,4,3,6,
+  2,4,3,7,
+  2,4,3,8,
+  2,4,3,9,
+  2,4,3,10,
+  2,4,3,12)
+
+#numSeqPlot(my_data)
+```

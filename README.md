@@ -14,8 +14,9 @@ with a proper graph.
 
 My name is Yunting Chiu, and I am a Data Science student at American
 University.  
-For more details please visit my [GitHub](https://github.com/twyunting)
-and [LinkedIn](https://www.linkedin.com/in/yuntingchiu/).
+For more details about me please visit my
+[GitHub](https://github.com/twyunting) and
+[LinkedIn](https://www.linkedin.com/in/yuntingchiu/).
 
 ## Installation
 

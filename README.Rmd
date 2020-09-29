@@ -22,7 +22,7 @@ The goal of hw04ptwyunting is to accomplish a math formula in sequence with a pr
 
 ## Author
 My name is Yunting Chiu, and I am a Data Science student at American University.\
-For more details please visit my [GitHub](https://github.com/twyunting) and  [LinkedIn](https://www.linkedin.com/in/yuntingchiu/).
+For more details about me please visit my [GitHub](https://github.com/twyunting) and  [LinkedIn](https://www.linkedin.com/in/yuntingchiu/).
 
 ## Installation
 

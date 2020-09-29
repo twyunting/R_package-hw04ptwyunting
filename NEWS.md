@@ -1,3 +1,7 @@
+# hw04ptwyunting 0.0.0.9003
+
+* Modified R documents with myseq_n and numSeqPlot
+
 # hw04ptwyunting 0.0.0.9002
 
 * Added a new function myseq_n and numSeqPlot

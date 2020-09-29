@@ -22,8 +22,10 @@
 #' 2,4,3,12)
 #'numSeqPlot(my_data)
 numSeqPlot <- function(nums){
-  stopifnot(length(nums) == 4 & as_tibble(nums)) # error check the length of nums and df type.
-  stopifnot(nums[4] > 0) # error check the fourth column is a positive integer
+  stopifnot(ncol(nums) == 4 & as_tibble(nums)) # error check the length and df type
+  stopifnot(all(nums[[4]] > 0) & is.numeric(nums[[1]]) & is.numeric(nums[[2]]),
+            is.numeric(nums[[3]]) & as.integer(nums[[4]]))
+  # error check the fourth column is a positive integer, and all numbers are numeric
 
   df <- tibble(n = 0, output = 0) # build a blank data frame
   nums <- tibble(nums) # named nums as tibble
@@ -43,3 +45,4 @@ numSeqPlot <- function(nums){
 
   return(graphic) # created numSeqPlot
 }
+

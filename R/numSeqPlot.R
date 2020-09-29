@@ -39,8 +39,7 @@ numSeqPlot <- function(nums){
   graphic <- df %>% # make a graphic
     ggplot2::ggplot(mapping = ggplot2::aes(x = n, y = output)) +
     ggplot2::geom_line() +
-    ggplot2::labs(title = paste("My Sequence:", df[ ,2]),
-                  x = "n", y = "output")
+    ggplot2::labs(title = paste("My Sequence:", df[ ,2]))
 
   return(graphic) # created numSeqPlot
 }

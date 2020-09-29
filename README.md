@@ -30,7 +30,7 @@ install.packages("hw04ptwyunting")
 
 ## Functions
 
-**hw04ptwyunting** includes two functions.  
+**hw04ptwyunting** package includes two functions.  
 1\. `myseq_n()`  
 2\. `numSeqPlot()`  
 
